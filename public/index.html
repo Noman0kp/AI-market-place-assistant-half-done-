@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artisan Marketplace</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>
+        Craft Your Perfect 
+        <span class="highlight">Product Story</span>
+      </h1>
+      <p>
+        Transform your artisan creations into compelling marketplace listings with AI-powered descriptions
+      </p>
+    </div>
+  </div>
+
+  <!-- Main Container with blur/frosted effect -->
+  <div class="container">
+    <!-- Form Section -->
+    <form id="artisanForm">
+      <input type="text" id="productName" placeholder="Product Name" required />
+      <textarea id="artisanStory" placeholder="Short Craft/Artisan Story" rows="4" required></textarea>
+      <button type="submit">Generate Description</button>
+    </form>
+
+    <!-- AI Output -->
+    <div class="output-container">
+      <h2>AI Output:</h2>
+      <div id="result"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+   <script src ="../index.js"></script>
+</body>
+</html>
